@@ -626,13 +626,13 @@ a {
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.form-group__input.comment {
+.form-group__input.form-group__input--comment {
     height: 120px;
     padding:12px 16px;
     resize: none;
 }
 
-.form-input.comment::placeholder {
+.form-input.form-group__input--comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 
