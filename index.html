@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="section header">
@@ -52,7 +52,7 @@
     </header>
     <main>
       <!--------------------- Герой ------------------>
-      <section class="section hero">
+      <section class="section__hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -114,7 +114,7 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="section activity">
+      <section class="section section-activity">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="activity__list">
@@ -145,7 +145,7 @@
         </div>
       </section>
       <!----------------------- Наша команда ------------------------>
-      <section class="section team">
+      <section class="section section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="teammate__list">
@@ -343,25 +343,25 @@
           <h3 class="appeal__title">присоединяйтесь</h3>
           <ul class="social-list">
             <li class="social-item">
-              <a href="./" class="social-item__link social-item__link--color"
+              <a href="./" class="social-item__link social-item__link--inverse-color"
                 ><svg width="20px" height="20px">
                   <use href="./img/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="social-item">
-              <a href="./" class="social-item__link social-item__link--color"
+              <a href="./" class="social-item__link social-item__link--inverse-color"
                 ><svg width="20px" height="16.25px">
                   <use href="./img/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-item__link social-item__link--color"
+              <a href="" class="social-item__link social-item__link--inverse-color"
                 ><svg width="10px" height="20px">
                   <use href="./img/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="social-item">
-              <a href="./" class="social-item__link social-item__link--color">
+              <a href="./" class="social-item__link social-item__link--inverse-color">
                 <svg width="20px" height="20px">
                   <use href="./img/icons.svg#icon-linkedin"></use></svg
               ></a>
@@ -373,7 +373,7 @@
           <label>
             <input class="footer__input" type="email" placeholder="Email" />
           </label>
-          <button type="button" class="button footer__button--flex">
+          <button type="button" class="button footer__button">
             Подписаться
             <svg class="footer__icon" width="24px" height="24px">
               <use href="./img/icons.svg#icon-mail-plan"></use>
@@ -383,7 +383,7 @@
       </div>
     </footer>
     <!----------------- Модальное окно ------------------------->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" data-modal-close>
           <svg class="modal__button--close" width="14px" height="14px">
@@ -396,21 +396,21 @@
             <div class="form-group">
               <label class="form-group__label" for="name">Имя</label>
               <input class="form-group__input" type="text" name="text" id="name" autofocus />
-              <svg class="form-group-icon" width="12px" height="12px">
+              <svg class="form-group__icon" width="12px" height="12px">
                 <use href="./img/icons.svg#icon-modal-person"></use>
               </svg>
             </div>
             <div class="form-group">
               <label class="form-group__label" for="tel">Телефон</label>
               <input class="form-group__input" type="tel" name="tel" id="tel" />
-              <svg class="form-group-icon" width="13px" height="13px">
+              <svg class="form-group__icon" width="13px" height="13px">
                 <use href="./img/icons.svg#icon-modal-phone"></use>
               </svg>
             </div>
             <div class="form-group">
               <label class="form-group__label" for="email">Почта</label>
               <input class="form-group__input" type="email" name="email" id="email" />
-              <svg class="form-group-icon" width="15px" height="12px">
+              <svg class="form-group__icon" width="15px" height="12px">
                 <use href="./img/icons.svg#icon-modal-email"></use>
               </svg>
             </div>
